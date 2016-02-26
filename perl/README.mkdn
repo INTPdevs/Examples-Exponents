@@ -1,0 +1,37 @@
+##About `/perl`
+
+This directory contains two scripts:
+
+### `exponent_calc.pl`
+
+This is the original example requirements script.
+
+```shell
+# base = 2, divisor = 16, max_val = 10000
+exponent_calc.pl 2 16 10000
+# 10 values satisfied the criteria:
+#   1 <= i <= 10000
+#   1 <= ( 2 ^ i  ) <= 10000
+#   ( 2 ^ i  ) divisible by 16
+#
+# 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192
+```
+
+### `exponent_table.pl`
+
+This is a simplified example for convenience of demonstrating this behaviour
+in bulk without making you guess which values will produce useful output
+
+```shell
+expontent_table.pl
+# exponents of  2:
+#   divisible by  2:    2,    4,    8,   16,   32,   64,  128,  256,  512,
+#   divisible by  4:    4,    8,   16,   32,   64,  128,  256,  512,
+#   divisible by  8:    8,   16,   32,   64,  128,  256,  512,
+#   divisible by 16:   16,   32,   64,  128,  256,  512,
+# exponents of  3:
+# ...
+```
+
+See `example_output.txt` for more example output of this script.
+
